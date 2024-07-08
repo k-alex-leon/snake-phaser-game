@@ -1,0 +1,21 @@
+*{
+  padding: 0%;
+  margin: 0%;
+}
+
+body{
+  background-color: rgb(71, 71, 71);
+}
+
+#app{
+  width: 80%;
+  height: 100%;
+  padding: 10vh;
+  display: flex;
+}
+
+#gameScene {
+  background-color: black;
+  height: 80vh;
+  width: 50%;
+}
