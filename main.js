@@ -26,6 +26,12 @@ const config = {
 const game = new Phaser.Game(config);
 
 let snake;
+// DIRECTIONS
+let UP = 0;
+let DOWN = 1;
+let LEFT = 2;
+let RIGHT = 3;
+
 let apple;
 
 function preload() {
@@ -34,7 +40,11 @@ function preload() {
 }
 
 function create() {
-  snake = this.physics.add.image(game.canvas.width * 0.5, game.canvas.height * 0.5, "snake");
+  snake = this.physics.add.image(
+    game.canvas.width * 0.5,
+    game.canvas.height * 0.5,
+    "snake"
+  );
   snake.setDisplaySize(30, 16);
 }
 
